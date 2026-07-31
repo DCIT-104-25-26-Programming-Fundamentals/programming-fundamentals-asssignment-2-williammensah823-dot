@@ -192,7 +192,7 @@ void findAverage(const vector<Student> &students)
 
     if (!found)
     {
-        cout << "Error: Student ID not found." << endl;
+        cout << "Oops! Student ID not found." << endl;
     }
 }
 
