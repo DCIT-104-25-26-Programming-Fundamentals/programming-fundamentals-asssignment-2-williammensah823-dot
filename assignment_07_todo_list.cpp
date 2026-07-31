@@ -130,7 +130,7 @@ void deleteTask(vector<string>& tasks)
 
     if (number < 1 || number > tasks.size())
     {
-        cout << "Error: Invalid task number." << endl;
+        cout << "Oops!: Invalid task number." << endl;
     }
     else
     {
