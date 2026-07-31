@@ -112,7 +112,7 @@ int main()
 
     if (n <= 0)
     {
-        cout << "Oops!: Number of terms must be greater than 0." << endl;
+        cout << "Oops! Number of terms must be greater than 0." << endl;
         return 0;
     }
 
