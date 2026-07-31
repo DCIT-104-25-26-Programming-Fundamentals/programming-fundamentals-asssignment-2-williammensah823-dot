@@ -180,7 +180,7 @@ int main() {
                 if (divide(num1, num2, result)) {
                     cout << "Result: " << num1 << " / " << num2 << " = " << result << "\n";
                 } else {
-                    cout << "Error: Cannot divide by zero.\n";
+                    cout << "Oops! Cannot divide by zero.\n";
                 }
                 break;
 
