@@ -42,3 +42,83 @@
 #include <iostream>
 using namespace std;
 
+//This function calculates the sum
+int getSum(int arr[], int n)
+{
+    int sum = 0;
+
+    for (int i = 0; i < n; i++)
+    {
+        sum += arr[i];
+    }
+
+    return sum;
+}
+
+// this function  calculates the average
+double findAverage(int arr[], int n)
+{
+    return (double)getSum(arr, n) / n;
+}
+
+// this Function finds the maximum value
+int getMaximum(int arr[], int n)
+{
+    int max = arr[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] > max)
+        {
+            max = arr[i];
+        }
+    }
+
+    return max;
+}
+
+//This Function finds the minimum value
+int getMinimum(int arr[], int n)
+{
+    int min = arr[0];
+
+    for (int i = 1; i < n; i++)
+    {
+        if (arr[i] < min)
+        {
+            min = arr[i];
+        }
+    }
+
+    return min;
+}
+
+int main()
+{
+    int n;
+
+    cout << "How many numbers? ";
+    cin >> n;
+
+    if (n <= 0)
+    {
+        cout << "Oops: Number of values must be greater than 0." << endl;
+        return 0;
+    }
+
+    int arr[n];
+
+    for (int i = 0; i < n; i++)
+    {
+        cout << "Enter number " << i + 1 << ": ";
+        cin >> arr[i];
+    }
+
+    cout << "\nResults:" << endl;
+    cout << "Sum:     " << getSum(arr, n) << endl;
+    cout << "Average: " << findAverage(arr, n) << endl;
+    cout << "Maximum: " << getMaximum(arr, n) << endl;
+    cout << "Minimum: " << getMinimum(arr, n) << endl;
+
+    return 0;
+}
