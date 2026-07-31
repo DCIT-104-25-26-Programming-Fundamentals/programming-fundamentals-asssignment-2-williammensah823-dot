@@ -188,7 +188,7 @@ int main() {
                 if (modulus(num1, num2, result)) {
                     cout << "Result: " << num1 << " % " << num2 << " = " << result << "\n";
                 } else {
-                    cout << "Ooops! Cannot perform modulus by zero.\n";
+                    cout << "Oops! Cannot perform modulus by zero.\n";
                 }
                 break;
 
