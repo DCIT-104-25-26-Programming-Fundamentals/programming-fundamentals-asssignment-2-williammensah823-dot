@@ -93,7 +93,7 @@ int main()
 
     if (grade == '\0')
     {
-        cout << "Error: Enter a score  between 0 and 100." << endl;
+        cout << "Oops!: Enter a score  between 0 and 100." << endl;
     }
     else
     {
