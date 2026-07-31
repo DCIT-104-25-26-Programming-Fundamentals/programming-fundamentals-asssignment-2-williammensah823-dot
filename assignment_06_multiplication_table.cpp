@@ -99,7 +99,7 @@ int main()
 
     if (n <= 0)
     {
-        cout << "Oops" !Please enter a positive integer." << endl;
+        cout << "Oops! Please enter a positive integer." << endl;
         return 0;
     }
 
